@@ -1,7 +1,7 @@
 import { ObjectType, Field, ID } from '@nestjs/graphql';
 
 @ObjectType()
-export class ItemType {
+export class MetadataType {
   @Field(() => ID)
   readonly id?: string;
   @Field()
