@@ -1,11 +1,7 @@
 import { InputType, Field } from '@nestjs/graphql';
 
 @InputType()
-export class MetadataInput {
+export class UrlInput {
   @Field()
-  readonly title: string;
-  @Field()
-  readonly description: string;
-  @Field()
-  readonly largestNumber: string;
+  readonly url: string;
 }
