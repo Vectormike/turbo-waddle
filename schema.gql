@@ -1,0 +1,14 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type MetadataType {
+  title: String!
+  description: String!
+  largestNumber: String!
+}
+
+type Query {
+  getMetadata: [MetadataType!]!
+  hello: String!
+}
