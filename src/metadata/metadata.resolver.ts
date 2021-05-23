@@ -1,4 +1,4 @@
-import { Resolver, Query } from '@nestjs/graphql';
+import { Resolver, Query, Mutation } from '@nestjs/graphql';
 import { MetadataType } from './dto/create-metadata';
 import { UrlInput } from './input-metadata.input';
 import { MetadataService } from './metadata.service';
@@ -8,7 +8,7 @@ export class MetadataResolver {
   constructor(private readonly metadataService: MetadataService) {}
 
   @Query((returns) => [MetadataType])
-  async getMetadata(url: UrlInput): Promise<MetadataType> {
+  async getMetadata(url: string){
     return this.metadataService.getMetadata(url as any);
   }
 

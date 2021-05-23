@@ -5,9 +5,9 @@ import { MetadataService } from './metadata.service';
 import { MetadataResolver } from './metadata.resolver';
 
 @Module({
-  imports: [
-    MongooseModule.forFeature([{ name: 'Metadata', schema: MetadaSchema }]),
-  ],
+  // imports: [
+  //   MongooseModule.forFeature([{ name: 'Metadata', schema: MetadaSchema }]),
+  // ],
   providers: [MetadataService, MetadataResolver],
 })
 export class MetadataModule {}

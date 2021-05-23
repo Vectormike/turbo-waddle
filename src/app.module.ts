@@ -11,9 +11,9 @@ import { MetadataModule } from './metadata/metadata.module';
       autoSchemaFile: 'schema.gql',
     }),
     MetadataModule,
-    MongooseModule.forRoot(
-      'mongodb+srv://Vectormike:Redeemer@cluster0.oa1xq.mongodb.net/test',
-    ),
+    // MongooseModule.forRoot(
+    //   'mongodb+srv://Vectormike:Redeemer@cluster0.oa1xq.mongodb.net/test',
+    // ),
   ],
   controllers: [AppController],
   providers: [AppService],
