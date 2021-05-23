@@ -12,6 +12,7 @@ export class MetadataService {
   async getMetadata(url: string): Promise<MetadataType> {
     const data = parseUrl(url);
     const createdMetadata = new this.metadaModel(data);
-    return await createdMetadata.save();
+    await createdMetadata.save();
+    return createdMetadata as any;
   }
 }

@@ -1,7 +1,7 @@
-import urlMetada from 'url-metadata';
+import urlMetadata from 'url-metadata';
 
 const parseUrl = (url: string) => {
-  urlMetada(url).then(
+  urlMetadata(url).then(
     function (metadata) {
       // success handler
       console.log(metadata);
